@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="s-solid.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Sahil's Portfolio</title>
+</head>
+
+<body>
+
+    <!-- ===============================Navbar Begin=============================-->
+    <nav>
+        <div class="container">
+            <a href="#" class="nameLogo">
+                <h3>Sahil<i class="fa-solid fa-square square"></i></h3>
+            </a>
+            <ul id="ul">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact" class="activepro">Let's Talk</a></li>
+            </ul>
+            <button id="menu-btn" onclick="showMenu()"><i class="fa-sharp fa-solid fa-bars"></i></button>
+            <button id="close-btn" onclick="hideMenu()"><i class="fa-solid fa-x"></i></button>
+        </div>
+    </nav>
+    <!-- ===============================Navbar End=============================-->
+
+    <!-- ===============================Landing begin=============================-->
+    <div class="section landing" id="home">
+        <div class="container">
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/sahil-k-49787b22a" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SahilKumarW" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/princesahil.kumar.9?mibextid=LQQJ4d" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+            </div>
+
+            <div class="info">
+                <h1><span class="auto-typing"></span></h1>
+                <h3>Hi, I'm <span style="color:#f24e1e;">Sahil</span></h3>
+                <p>A highly motivated individual working and pursuing my career in domain of Computer Science.
+                    I like to execute all the tasks on me enthusiastically and with the maximum efforts I can put in!</p>
+                <a href="#contact" class="btn btn-primary">Let's Talk</a>
+            </div>
+
+            <div class="profile-area">
+                <div class="outer-circle">
+                    <i class="fa-solid fa-code one"></i>
+                    <i class="fa-brands fa-bitcoin two"></i>
+                    <i class="fa-solid fa-laptop three"></i>
+                    <i class="fa-solid fa-mug-hot four"></i>
+                </div>
+                <div class="inner-circle">
+                    <img src="sahil.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============================Landing End=============================-->
+
+
+    <!-- ===============================About Started=============================-->
+    <div class="section about" id="about">
+        <h1>About</h1>
+        <div class="container">
+            <div class="image-about">
+                <img src="designer.jpg">
+            </div>
+            <div class="infos">
+                <div id="certificaton">
+                    <h2 class=""><u>CERTIFICATIONS</u></h2>
+                    <h4 class="">PCAP: Programming Essentials in Python</h4>
+                    <p id="">OpenEDG Python Institute</p>
+                    <h4 class="">Blockchain Foundation and Smart Contract Development</h4>
+                    <p id="">JawanTech Pk</p>
+                    <h4 class="">Graphic Designing Basic and Advance</h4>
+                    <p id="">Saylani Mass Training Programme</p>
+
+                    <h2 class="">EDUCATION</h2>
+                    <h4 class="">BE - Software Engineering</h4>
+                    <h5 class="">NED University of Engineering & Technology</h5>
+                    <i id="">2021-PRESENT </i>
+                </div>
+                <div class="read-more-content " id="experience">
+                    <p>Despite being a student and managing my academics, I'm keen to learn new things and continue to
+                        thrive. I have a comfortable grip on the computer keyboard, which helps me to type much faster.
+                        Microsoft Word, PowerPoint, and Excel are the programmes in which I excel the most. I'm also
+                        skilled in English writing, which has allowed me to do freelance content writing, paraphrasing,
+                        composition, and un-plagiarizing projects. Apart from that, I am a certified graphic designer
+                        with a great understanding of Adobe
+                        Illustrator and Photoshop. I've accomplished several projects involving logo design, UI/UX
+                        design, social media post design, and much more, and I'm presently operating my own graphics
+                        design and graphically created bespoke products startup.
+                    </p>
+                    <p> As areas of competence, I've learned front end web programming with HTML, CSS, and JavaScript.
+                        On the other side, I've got hands-on experience programming with Solidity on Remix IDE, and I'm
+                        now prepared to build unique blockchain-based smart contracts and am ready to pursue it
+                        professionally.
+                    </p>
+                </div>
+                <a class="read-more" onclick="changeContent(this)">Experience</a>
+
+                <a href="SELF-CV.pdf" target="_blank" class="btn btn-primary" download>
+                    <i class="fa-solid fa-download" style="margin-right: 1rem;"></i>Download CV</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- ===============================About Ended=============================-->
+
+
+    <!-- ===============================Skills Started=============================-->
+
+    <div class="section skills " id="skills">
+        <h1>Skills</h1>
+        <div class="container">
+            <div class="skill">
+                <div class="head" onclick="showSkill(this)">
+                    <div class="left">
+                        <i class="fa-solid fa-palette"></i>
+                        <h4>Graphic Designing</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Adobe Illustrator</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-1"></div>
+                            </div>
+                            <h5>90%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Adobe Photoshop</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-2"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Coral Draw</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-3"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Inpage</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-4"></div>
+                            </div>
+                            <h5>87%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of a skill -->
+            <div class="skill">
+                <div class="head" onclick="showSkill(this)">
+                    <div class="left">
+                        <i class="fa-solid fa-pen-ruler"></i>
+                        <h4>UI/UX Designing</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Figma</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-5"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Adobe XD</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-6"></div>
+                            </div>
+                            <h5>75%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>After Effects</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-7"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                </div>
+            </div>
+            <!-- End of a skill -->
+            <!-- start of another skill -->
+            <div class="skill">
+                <div class="head" onclick="showSkill(this)">
+                    <div class="left">
+                        <i class="fa-solid fa-laptop"></i>
+                        <h4>Front End Web Development</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>HTML</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-8"></div>
+                            </div>
+                            <h5>95%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>CSS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-9"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>JavaScript</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-10"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>ReactJS</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-11"></div>
+                            </div>
+                            <h5>80%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of a skill -->
+            <div class="skill">
+                <div class="head" onclick="showSkill(this)">
+                    <div class="left">
+                        <i class="fa-brands fa-bitcoin"></i>
+                        <h4>Blockchain Development</h4>
+                    </div>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <h5>Solidity.js</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-12"></div>
+                            </div>
+                            <h5>90%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Remix IDE</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-13"></div>
+                            </div>
+                            <h5>88%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>Custom Smart Contracts</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-14"></div>
+                            </div>
+                            <h5>92%</h5>
+                        </div>
+                    </div>
+                    <!-- end of an item -->
+                    <div class="item">
+                        <h5>NFTs</h5>
+                        <div class="progress-area">
+                            <div class="progress-bar">
+                                <div class="progress p-15"></div>
+                            </div>
+                            <h5>87%</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of a skill -->
+
+        </div>
+    </div>
+
+
+    <!-- ===============================Skills Ended=============================-->
+
+
+    <!-- ===============================Services Started=============================-->
+    <div class="section services" id="services">
+        <h1>Services</h1>
+        <div class="container">
+            <div class="service">
+                <i class="fa-sharp fa-solid fa-laptop"></i>
+                <h3>Front End Web Development</h3>
+                <p>I will create beautiful and performant products with delightful user experiences.</p>
+            </div>
+
+            <div class="service">
+                <i class="fa-solid fa-pen-ruler serviceone"></i>
+                <h3>Graphics Designing</h3>
+                <p>Creative, independent and detail-oriented graphic designer with more than two years of experience in
+                    <em> digital brand management, logo design</em> and <em>layout design</em>.
+                </p>
+            </div>
+
+            <div class="service ">
+                <i class="fa-solid fa-coins servicetwo"></i>
+                <h3>Blockchain Development</h3>
+                <p>I will construct custom blockchain-based smart contracts and <em>Decentralized Applications (DApps)</em>.
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===============================Services Ended=============================-->
+
+    <!-- ===============================Projects Started=============================-->
+
+    <div class="section recent-work" id="portfolio">
+        <div class="container">
+            <h1>My Recent Work</h1>
+
+
+            <h3>Graphic Designing Projects</h3>
+            <div class="projects">
+                <div class="gallery">
+                    <img src="img1.jpeg" onclick="zoomIn(this)">
+                    <img src="img2.jpeg" onclick="zoomIn(this)">
+                    <img src="img3.jpg" onclick="zoomIn(this)">
+                    <img src="img4.jpeg" onclick="zoomIn(this)">
+
+                    <img src="img5.png" onclick="zoomIn(this)">
+                    <img src="img6.png" onclick="zoomIn(this)">
+                    <img src="img7.jpeg" onclick="zoomIn(this)">
+                    <img src="img8.jpeg" onclick="zoomIn(this)">
+
+                </div>
+                <div class="modal" id="modal">
+                    <span id="closeBtn" onclick="this.parentElement.style.display = 'none';">&times;</span>
+                    <img src="img1.jpeg" id="modalPic" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============================Projects Ended=============================-->
+
+    <!-- ===============================Form Started=============================-->
+
+    <div class="section contact" id="contact">
+        <div class="overlay">
+            <div class="container">
+                <h1>Let's Talk</h1>
+                <p>Questions? Comments? Fill out the details below and CONNECT.</p>
+                <p><a class="walink" href="https://wa.link/02r76e"><b>Click to Connect on
+                            WhatsApp</b></a>
+                    <!-- <button onclick="window.location.href='https://wa.link/02r76e';">Click to Connect on
+                        WhatsApp</button> -->
+                    </a>
+                </p>
+
+                <!-- <p>To contact on phone/Whatsapp dial <span class="phonenoo"><b class="phoneNo">+92-3368509342</b></span></p> -->
+
+                <h4 class="emailheading">Email:</h4>
+                <form action="https://formsubmit.co/227c11c73da2ffe1772a90d549bbfc7e" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required autocomplete="off">
+                    <input type="hidden" name="_subject" value="New Message form website">
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="Message" placeholder="Message" required rows="7"></textarea>
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="submit" name="submit" class="btn btn-primary">
+                    <input type="hidden" name="_next" value="https://www.its-sahil.com/">
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ===============================Form Ended=============================-->
+    <!-- ===============================Footer Started=============================-->
+
+    <footer>
+        <div class="container">
+            <a href="#">
+                <h3>Sahil<i class="fa-solid fa-square square"></i></h3>
+            </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Let's Talk</a></li>
+            </ul>
+            <div class="socialss">
+                <a href="https://www.linkedin.com/in/sahil-k-49787b22a" target="_blank"><i
+                        class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/SahilKumarW" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/princesahil.kumar.9?mibextid=LQQJ4d" target="_blank"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+
+
+            </div>
+        </div>
+    </footer>
+    <!-- ===============================Footer Ended=============================-->
+
+
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        var options = {
+            strings: ['<i>Graphics</i> Designer, ', '<i>Blockchain</i> Developer.'],
+            typeSpeed: 120,
+            backSpeed: 30,
+            loop: true
+        };
+        var typed = new Typed('.auto-typing', options);
+    </script>
+
+</body>
+
+</html>
